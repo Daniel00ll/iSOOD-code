@@ -1,0 +1,6 @@
+def safe_input_list():
+  try:
+    return [int(x) for x in input().split()]
+  except ValueError:
+    print("Invalid input. Please enter a line of integers separated by spaces.")
+    return None
